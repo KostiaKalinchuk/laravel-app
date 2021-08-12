@@ -17,11 +17,10 @@ class CreateArticleTagTable extends Migration
 //            $table->id();
 //            $table->unsignedBigInteger('article_id');
 //            $table->foreign('article_id')->references('id')->on('articles');
-//            $table->unsignedBigInteger('tag_id');
-//            $table->foreign('tag_id')->references('id')->on('tags');
-//            $table->timestamps();
             $table->foreignId('article_id')->constrained()->onDelete('cascade');
             $table->foreignId('tag_id')->constrained()->onDelete('cascade');
+//            $table->unsignedBigInteger('tag_id');
+//            $table->foreign('tag_id')->references('id')->on('tags');
         });
     }
 
