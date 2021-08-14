@@ -2,23 +2,23 @@
     <div class="row">
         <form @submit.prevent="submit_form()" v-if="!commentSuccess">
             <div class="mb-3">
-                <label for="commentSubject" class="form-label">Тема комментария</label>
+                <label for="commentSubject" class="form-label">Comment subject</label>
                 <input type="text" class="form-control" id="commentSubject" v-model="subject">
                 <div class="alert alert-warning" role="alert" v-if="errorsMessage.subject">
                     {{errorsMessage.subject[0]}}
                 </div>
             </div>
             <div class="mb-3">
-                <label for="commentBody" class="form-label">Комментарий</label>
+                <label for="commentBody" class="form-label">Comment</label>
                 <textarea class="form-control" id="commentBody" rows="3" v-model="body"></textarea>
                 <div class="alert alert-warning" role="alert" v-if="errorsMessage.body">
                     {{errorsMessage.body[0]}}
                 </div>
             </div>
-            <button class="btn btn-success" type="submit">Отправить</button>
+            <button class="btn btn-success" type="submit">Send</button>
         </form>
         <div class="alert alert-success" role="alert" v-else>
-            Комментарий успешно отправлен!
+            Comment sent successfully!
         </div>
         <div class="toast-container pb-2 mt-5 mx-auto" style="min-width: 100%;" v-for="comment in comments">
             <div class="toast showing" style="min-width: 100%;">

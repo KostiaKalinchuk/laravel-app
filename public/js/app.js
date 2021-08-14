@@ -20391,7 +20391,7 @@ var render = function() {
       _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.article.body))]),
       _vm._v(" "),
       _c("p", [
-        _vm._v("Опубликованно:  "),
+        _vm._v("Published:  "),
         _c("i", [_vm._v(_vm._s(_vm.article.created_at))])
       ]),
       _vm._v(" "),
@@ -20450,7 +20450,7 @@ var render = function() {
                     staticClass: "form-label",
                     attrs: { for: "commentSubject" }
                   },
-                  [_vm._v("Тема комментария")]
+                  [_vm._v("Comment subject")]
                 ),
                 _vm._v(" "),
                 _c("input", {
@@ -20497,7 +20497,7 @@ var render = function() {
                 _c(
                   "label",
                   { staticClass: "form-label", attrs: { for: "commentBody" } },
-                  [_vm._v("Комментарий")]
+                  [_vm._v("Comment")]
                 ),
                 _vm._v(" "),
                 _c("textarea", {
@@ -20543,14 +20543,14 @@ var render = function() {
               _c(
                 "button",
                 { staticClass: "btn btn-success", attrs: { type: "submit" } },
-                [_vm._v("Отправить")]
+                [_vm._v("Send")]
               )
             ]
           )
         : _c(
             "div",
             { staticClass: "alert alert-success", attrs: { role: "alert" } },
-            [_vm._v("\n        Комментарий успешно отправлен!\n    ")]
+            [_vm._v("\n        Comment sent successfully!\n    ")]
           ),
       _vm._v(" "),
       _vm._l(_vm.comments, function(comment) {

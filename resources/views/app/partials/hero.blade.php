@@ -4,13 +4,13 @@
             <div class="col-12">
                 <div class="hero__content text-center">
                     <div class="hero__content-tag">
-                        <a href="#">Разработчик PHP - Laravel</a>
+                        <a href="#">PHP - Laravel</a>
                     </div>
-                    <h2><a href="#">Тестовое задание</a></h2>
+                    <h2><a href="#">First test app</a></h2>
 
-                    <div class="hero__content-tag">
-                        <a href="#">Udemy.com</a>
-                    </div>
+{{--                    <div class="hero__content-tag">--}}
+{{--                        <a href="#"></a>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
